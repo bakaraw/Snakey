@@ -14,8 +14,7 @@ public:
        glm::vec3 cubeColor = glm::vec3(1.0f, 0.0f, 0.0f))
       : Position(position), ScaleFactor(scaleFactor), CubeColor(cubeColor) {}
 
-  void draw(Shader &shader, glm::vec3 newPosition) {
-    Position = newPosition;
+  void draw(Shader &shader) {
     glm::mat4 model = glm::mat4(1.0f);
     model = glm::translate(model, Position);
     model = glm::scale(model, glm::vec3(ScaleFactor));

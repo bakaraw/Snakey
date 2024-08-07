@@ -169,12 +169,12 @@ CMakeFiles/snaky.dir/all: lib/glfw/src/CMakeFiles/glfw.dir/all
 CMakeFiles/snaky.dir/all: lib/glm/glm/CMakeFiles/glm.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=49,50,51,52,53,54,55,56,57,58,59,60,61,62 "Built target snaky"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64 "Built target snaky"
 .PHONY : CMakeFiles/snaky.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/snaky.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/snaky.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles 0
 .PHONY : CMakeFiles/snaky.dir/rule
@@ -273,7 +273,7 @@ lib/glfw/src/CMakeFiles/glfw.dir/clean:
 lib/glfw/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/glfw/src/CMakeFiles/update_mappings.dir/build.make lib/glfw/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/glfw/src/CMakeFiles/update_mappings.dir/build.make lib/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=63 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=65 "Built target update_mappings"
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.

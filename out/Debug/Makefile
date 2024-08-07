@@ -431,6 +431,30 @@ src/entities/Cube.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/src/entities/Cube.cpp.s
 .PHONY : src/entities/Cube.cpp.s
 
+src/entities/Player.o: src/entities/Player.cpp.o
+.PHONY : src/entities/Player.o
+
+# target to build an object file
+src/entities/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/src/entities/Player.cpp.o
+.PHONY : src/entities/Player.cpp.o
+
+src/entities/Player.i: src/entities/Player.cpp.i
+.PHONY : src/entities/Player.i
+
+# target to preprocess a source file
+src/entities/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/src/entities/Player.cpp.i
+.PHONY : src/entities/Player.cpp.i
+
+src/entities/Player.s: src/entities/Player.cpp.s
+.PHONY : src/entities/Player.s
+
+# target to generate assembly for a file
+src/entities/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/src/entities/Player.cpp.s
+.PHONY : src/entities/Player.cpp.s
+
 src/entities/Score.o: src/entities/Score.cpp.o
 .PHONY : src/entities/Score.o
 
@@ -551,6 +575,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/utilities/DeltaTime.o: src/utilities/DeltaTime.cpp.o
+.PHONY : src/utilities/DeltaTime.o
+
+# target to build an object file
+src/utilities/DeltaTime.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o
+.PHONY : src/utilities/DeltaTime.cpp.o
+
+src/utilities/DeltaTime.i: src/utilities/DeltaTime.cpp.i
+.PHONY : src/utilities/DeltaTime.i
+
+# target to preprocess a source file
+src/utilities/DeltaTime.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.i
+.PHONY : src/utilities/DeltaTime.cpp.i
+
+src/utilities/DeltaTime.s: src/utilities/DeltaTime.cpp.s
+.PHONY : src/utilities/DeltaTime.s
+
+# target to generate assembly for a file
+src/utilities/DeltaTime.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.s
+.PHONY : src/utilities/DeltaTime.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -593,6 +641,9 @@ help:
 	@echo "... src/entities/Cube.o"
 	@echo "... src/entities/Cube.i"
 	@echo "... src/entities/Cube.s"
+	@echo "... src/entities/Player.o"
+	@echo "... src/entities/Player.i"
+	@echo "... src/entities/Player.s"
 	@echo "... src/entities/Score.o"
 	@echo "... src/entities/Score.i"
 	@echo "... src/entities/Score.s"
@@ -608,6 +659,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/utilities/DeltaTime.o"
+	@echo "... src/utilities/DeltaTime.i"
+	@echo "... src/utilities/DeltaTime.s"
 .PHONY : help
 
 

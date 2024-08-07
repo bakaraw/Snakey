@@ -1,45 +1,33 @@
 CMakeFiles/snaky.dir/src/main.cpp.o: \
  /home/laighton/CLionProjects/snaky/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/laighton/CLionProjects/snaky/include/imgui/imgui.h \
- /home/laighton/CLionProjects/snaky/include/imgui/imconfig.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/float.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h \
- /usr/include/string.h /usr/include/bits/libc-header-start.h \
+ /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/vector_float3.hpp \
+ /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/type_vec3.hpp \
+ /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/qualifier.hpp \
+ /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/setup.hpp \
+ /usr/include/c++/14.1.1/cassert \
+ /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
+ /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
  /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/strings.h /usr/include/assert.h \
- /home/laighton/CLionProjects/snaky/include/imgui/imgui_impl_glfw.h \
- /home/laighton/CLionProjects/snaky/include/imgui/imgui_impl_opengl3.h \
- /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/matrix_clip_space.hpp \
- /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../ext/scalar_constants.hpp \
- /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../ext/../detail/setup.hpp \
- /usr/include/c++/14.1.1/cassert \
- /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
- /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
- /usr/include/c++/14.1.1/pstl/pstl_config.h \
- /usr/include/c++/14.1.1/cstddef /usr/include/c++/14.1.1/bits/version.h \
- /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../ext/../detail/../simd/platform.h \
+ /usr/include/c++/14.1.1/pstl/pstl_config.h /usr/include/assert.h \
+ /usr/include/c++/14.1.1/cstddef \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h \
+ /usr/include/c++/14.1.1/bits/version.h \
+ /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/../simd/platform.h \
  /usr/include/c++/14.1.1/cstdint \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/types.h \
- /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
- /usr/include/bits/wchar.h /usr/include/bits/stdint-intn.h \
- /usr/include/bits/stdint-uintn.h /usr/include/bits/stdint-least.h \
- /usr/include/c++/14.1.1/type_traits \
- /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../ext/scalar_constants.inl \
- /usr/include/c++/14.1.1/limits \
- /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../geometric.hpp \
- /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/type_vec3.hpp \
- /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/qualifier.hpp \
- /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/setup.hpp \
+ /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/bits/time64.h /usr/include/bits/wchar.h \
+ /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h /usr/include/c++/14.1.1/type_traits \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/type_vec3.inl \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/compute_vector_relational.hpp \
+ /usr/include/c++/14.1.1/limits \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/compute_vector_decl.hpp \
  /usr/include/c++/14.1.1/functional \
  /usr/include/c++/14.1.1/bits/stl_function.h \
@@ -97,6 +85,19 @@ CMakeFiles/snaky.dir/src/main.cpp.o: \
  /usr/include/c++/14.1.1/bits/vector.tcc /usr/include/c++/14.1.1/array \
  /usr/include/c++/14.1.1/compare \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/_vectorize.hpp \
+ /home/laighton/CLionProjects/snaky/include/imgui/imgui.h \
+ /home/laighton/CLionProjects/snaky/include/imgui/imconfig.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/float.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
+ /usr/include/string.h /usr/include/bits/types/locale_t.h \
+ /usr/include/bits/types/__locale_t.h /usr/include/strings.h \
+ /home/laighton/CLionProjects/snaky/include/imgui/imgui_impl_glfw.h \
+ /home/laighton/CLionProjects/snaky/include/imgui/imgui_impl_opengl3.h \
+ /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/matrix_clip_space.hpp \
+ /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../ext/scalar_constants.hpp \
+ /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../ext/../detail/setup.hpp \
+ /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../ext/scalar_constants.inl \
+ /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../geometric.hpp \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/func_geometric.inl \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/../exponential.hpp \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../detail/../detail/type_vec1.hpp \
@@ -175,7 +176,6 @@ CMakeFiles/snaky.dir/src/main.cpp.o: \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/../vec3.hpp \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/.././ext/vector_bool3.hpp \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/.././ext/vector_bool3_precision.hpp \
- /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/.././ext/vector_float3.hpp \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/.././ext/vector_float3_precision.hpp \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/.././ext/vector_double3.hpp \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/.././ext/vector_double3_precision.hpp \
@@ -401,4 +401,6 @@ CMakeFiles/snaky.dir/src/main.cpp.o: \
  /home/laighton/CLionProjects/snaky/src/entities/../graphics/Shader.h \
  /home/laighton/CLionProjects/snaky/src/entities/Score.h \
  /home/laighton/CLionProjects/snaky/src/entities/Cube.h \
- /usr/include/c++/14.1.1/ctime
+ /usr/include/c++/14.1.1/ctime \
+ /home/laighton/CLionProjects/snaky/src/utilities/DeltaTime.h \
+ /home/laighton/CLionProjects/snaky/src/entities/Player.h

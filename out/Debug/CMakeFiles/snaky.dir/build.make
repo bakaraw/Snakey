@@ -153,10 +153,38 @@ CMakeFiles/snaky.dir/src/entities/Score.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snaky.dir/src/entities/Score.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laighton/CLionProjects/snaky/src/entities/Score.cpp -o CMakeFiles/snaky.dir/src/entities/Score.cpp.s
 
+CMakeFiles/snaky.dir/src/entities/Player.cpp.o: CMakeFiles/snaky.dir/flags.make
+CMakeFiles/snaky.dir/src/entities/Player.cpp.o: /home/laighton/CLionProjects/snaky/src/entities/Player.cpp
+CMakeFiles/snaky.dir/src/entities/Player.cpp.o: CMakeFiles/snaky.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/snaky.dir/src/entities/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snaky.dir/src/entities/Player.cpp.o -MF CMakeFiles/snaky.dir/src/entities/Player.cpp.o.d -o CMakeFiles/snaky.dir/src/entities/Player.cpp.o -c /home/laighton/CLionProjects/snaky/src/entities/Player.cpp
+
+CMakeFiles/snaky.dir/src/entities/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snaky.dir/src/entities/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/laighton/CLionProjects/snaky/src/entities/Player.cpp > CMakeFiles/snaky.dir/src/entities/Player.cpp.i
+
+CMakeFiles/snaky.dir/src/entities/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snaky.dir/src/entities/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laighton/CLionProjects/snaky/src/entities/Player.cpp -o CMakeFiles/snaky.dir/src/entities/Player.cpp.s
+
+CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o: CMakeFiles/snaky.dir/flags.make
+CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o: /home/laighton/CLionProjects/snaky/src/utilities/DeltaTime.cpp
+CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o: CMakeFiles/snaky.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o -MF CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o.d -o CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o -c /home/laighton/CLionProjects/snaky/src/utilities/DeltaTime.cpp
+
+CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/laighton/CLionProjects/snaky/src/utilities/DeltaTime.cpp > CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.i
+
+CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laighton/CLionProjects/snaky/src/utilities/DeltaTime.cpp -o CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.s
+
 CMakeFiles/snaky.dir/include/imgui/imgui.cpp.o: CMakeFiles/snaky.dir/flags.make
 CMakeFiles/snaky.dir/include/imgui/imgui.cpp.o: /home/laighton/CLionProjects/snaky/include/imgui/imgui.cpp
 CMakeFiles/snaky.dir/include/imgui/imgui.cpp.o: CMakeFiles/snaky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snaky.dir/include/imgui/imgui.cpp.o -MF CMakeFiles/snaky.dir/include/imgui/imgui.cpp.o.d -o CMakeFiles/snaky.dir/include/imgui/imgui.cpp.o -c /home/laighton/CLionProjects/snaky/include/imgui/imgui.cpp
 
 CMakeFiles/snaky.dir/include/imgui/imgui.cpp.i: cmake_force
@@ -170,7 +198,7 @@ CMakeFiles/snaky.dir/include/imgui/imgui.cpp.s: cmake_force
 CMakeFiles/snaky.dir/include/imgui/imgui_draw.cpp.o: CMakeFiles/snaky.dir/flags.make
 CMakeFiles/snaky.dir/include/imgui/imgui_draw.cpp.o: /home/laighton/CLionProjects/snaky/include/imgui/imgui_draw.cpp
 CMakeFiles/snaky.dir/include/imgui/imgui_draw.cpp.o: CMakeFiles/snaky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui_draw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snaky.dir/include/imgui/imgui_draw.cpp.o -MF CMakeFiles/snaky.dir/include/imgui/imgui_draw.cpp.o.d -o CMakeFiles/snaky.dir/include/imgui/imgui_draw.cpp.o -c /home/laighton/CLionProjects/snaky/include/imgui/imgui_draw.cpp
 
 CMakeFiles/snaky.dir/include/imgui/imgui_draw.cpp.i: cmake_force
@@ -184,7 +212,7 @@ CMakeFiles/snaky.dir/include/imgui/imgui_draw.cpp.s: cmake_force
 CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o: CMakeFiles/snaky.dir/flags.make
 CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o: /home/laighton/CLionProjects/snaky/include/imgui/imgui_widgets.cpp
 CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o: CMakeFiles/snaky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o -MF CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o -c /home/laighton/CLionProjects/snaky/include/imgui/imgui_widgets.cpp
 
 CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.i: cmake_force
@@ -198,7 +226,7 @@ CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.s: cmake_force
 CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.o: CMakeFiles/snaky.dir/flags.make
 CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.o: /home/laighton/CLionProjects/snaky/include/imgui/imgui_tables.cpp
 CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.o: CMakeFiles/snaky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.o -MF CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.o.d -o CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.o -c /home/laighton/CLionProjects/snaky/include/imgui/imgui_tables.cpp
 
 CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.i: cmake_force
@@ -212,7 +240,7 @@ CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.s: cmake_force
 CMakeFiles/snaky.dir/include/imgui/imgui_demo.cpp.o: CMakeFiles/snaky.dir/flags.make
 CMakeFiles/snaky.dir/include/imgui/imgui_demo.cpp.o: /home/laighton/CLionProjects/snaky/include/imgui/imgui_demo.cpp
 CMakeFiles/snaky.dir/include/imgui/imgui_demo.cpp.o: CMakeFiles/snaky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui_demo.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snaky.dir/include/imgui/imgui_demo.cpp.o -MF CMakeFiles/snaky.dir/include/imgui/imgui_demo.cpp.o.d -o CMakeFiles/snaky.dir/include/imgui/imgui_demo.cpp.o -c /home/laighton/CLionProjects/snaky/include/imgui/imgui_demo.cpp
 
 CMakeFiles/snaky.dir/include/imgui/imgui_demo.cpp.i: cmake_force
@@ -226,7 +254,7 @@ CMakeFiles/snaky.dir/include/imgui/imgui_demo.cpp.s: cmake_force
 CMakeFiles/snaky.dir/include/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/snaky.dir/flags.make
 CMakeFiles/snaky.dir/include/imgui/imgui_impl_glfw.cpp.o: /home/laighton/CLionProjects/snaky/include/imgui/imgui_impl_glfw.cpp
 CMakeFiles/snaky.dir/include/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/snaky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui_impl_glfw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snaky.dir/include/imgui/imgui_impl_glfw.cpp.o -MF CMakeFiles/snaky.dir/include/imgui/imgui_impl_glfw.cpp.o.d -o CMakeFiles/snaky.dir/include/imgui/imgui_impl_glfw.cpp.o -c /home/laighton/CLionProjects/snaky/include/imgui/imgui_impl_glfw.cpp
 
 CMakeFiles/snaky.dir/include/imgui/imgui_impl_glfw.cpp.i: cmake_force
@@ -240,7 +268,7 @@ CMakeFiles/snaky.dir/include/imgui/imgui_impl_glfw.cpp.s: cmake_force
 CMakeFiles/snaky.dir/include/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/snaky.dir/flags.make
 CMakeFiles/snaky.dir/include/imgui/imgui_impl_opengl3.cpp.o: /home/laighton/CLionProjects/snaky/include/imgui/imgui_impl_opengl3.cpp
 CMakeFiles/snaky.dir/include/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/snaky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/snaky.dir/include/imgui/imgui_impl_opengl3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snaky.dir/include/imgui/imgui_impl_opengl3.cpp.o -MF CMakeFiles/snaky.dir/include/imgui/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/snaky.dir/include/imgui/imgui_impl_opengl3.cpp.o -c /home/laighton/CLionProjects/snaky/include/imgui/imgui_impl_opengl3.cpp
 
 CMakeFiles/snaky.dir/include/imgui/imgui_impl_opengl3.cpp.i: cmake_force
@@ -259,6 +287,8 @@ snaky_OBJECTS = \
 "CMakeFiles/snaky.dir/src/graphics/Camera.cpp.o" \
 "CMakeFiles/snaky.dir/src/entities/Cube.cpp.o" \
 "CMakeFiles/snaky.dir/src/entities/Score.cpp.o" \
+"CMakeFiles/snaky.dir/src/entities/Player.cpp.o" \
+"CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o" \
 "CMakeFiles/snaky.dir/include/imgui/imgui.cpp.o" \
 "CMakeFiles/snaky.dir/include/imgui/imgui_draw.cpp.o" \
 "CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o" \
@@ -276,6 +306,8 @@ snaky: CMakeFiles/snaky.dir/src/graphics/Shader.cpp.o
 snaky: CMakeFiles/snaky.dir/src/graphics/Camera.cpp.o
 snaky: CMakeFiles/snaky.dir/src/entities/Cube.cpp.o
 snaky: CMakeFiles/snaky.dir/src/entities/Score.cpp.o
+snaky: CMakeFiles/snaky.dir/src/entities/Player.cpp.o
+snaky: CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o
 snaky: CMakeFiles/snaky.dir/include/imgui/imgui.cpp.o
 snaky: CMakeFiles/snaky.dir/include/imgui/imgui_draw.cpp.o
 snaky: CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o
@@ -289,7 +321,7 @@ snaky: lib/glm/glm/libglm.a
 snaky: /usr/lib/librt.a
 snaky: /usr/lib/libm.so
 snaky: CMakeFiles/snaky.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable snaky"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable snaky"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/snaky.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

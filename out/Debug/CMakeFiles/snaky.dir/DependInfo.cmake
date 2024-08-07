@@ -17,10 +17,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/laighton/CLionProjects/snaky/include/imgui/imgui_tables.cpp" "CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.o" "gcc" "CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.o.d"
   "/home/laighton/CLionProjects/snaky/include/imgui/imgui_widgets.cpp" "CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o" "gcc" "CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o.d"
   "/home/laighton/CLionProjects/snaky/src/entities/Cube.cpp" "CMakeFiles/snaky.dir/src/entities/Cube.cpp.o" "gcc" "CMakeFiles/snaky.dir/src/entities/Cube.cpp.o.d"
+  "/home/laighton/CLionProjects/snaky/src/entities/Player.cpp" "CMakeFiles/snaky.dir/src/entities/Player.cpp.o" "gcc" "CMakeFiles/snaky.dir/src/entities/Player.cpp.o.d"
   "/home/laighton/CLionProjects/snaky/src/entities/Score.cpp" "CMakeFiles/snaky.dir/src/entities/Score.cpp.o" "gcc" "CMakeFiles/snaky.dir/src/entities/Score.cpp.o.d"
   "/home/laighton/CLionProjects/snaky/src/graphics/Camera.cpp" "CMakeFiles/snaky.dir/src/graphics/Camera.cpp.o" "gcc" "CMakeFiles/snaky.dir/src/graphics/Camera.cpp.o.d"
   "/home/laighton/CLionProjects/snaky/src/graphics/Shader.cpp" "CMakeFiles/snaky.dir/src/graphics/Shader.cpp.o" "gcc" "CMakeFiles/snaky.dir/src/graphics/Shader.cpp.o.d"
   "/home/laighton/CLionProjects/snaky/src/main.cpp" "CMakeFiles/snaky.dir/src/main.cpp.o" "gcc" "CMakeFiles/snaky.dir/src/main.cpp.o.d"
+  "/home/laighton/CLionProjects/snaky/src/utilities/DeltaTime.cpp" "CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o" "gcc" "CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -37,6 +37,18 @@
 },
 {
   "directory": "/home/laighton/CLionProjects/snaky/out/Debug",
+  "command": "/usr/bin/c++ -DASSETS_DIRECTORY=\\\"/home/laighton/CLionProjects/snaky/assets\\\" -I/home/laighton/CLionProjects/snaky/snaky -I/home/laighton/CLionProjects/snaky/PRIVATE -I/home/laighton/CLionProjects/snaky/include -I/home/laighton/CLionProjects/snaky/lib/glfw/include -I/home/laighton/CLionProjects/snaky/lib/glm -g -o CMakeFiles/snaky.dir/src/entities/Player.cpp.o -c /home/laighton/CLionProjects/snaky/src/entities/Player.cpp",
+  "file": "/home/laighton/CLionProjects/snaky/src/entities/Player.cpp",
+  "output": "CMakeFiles/snaky.dir/src/entities/Player.cpp.o"
+},
+{
+  "directory": "/home/laighton/CLionProjects/snaky/out/Debug",
+  "command": "/usr/bin/c++ -DASSETS_DIRECTORY=\\\"/home/laighton/CLionProjects/snaky/assets\\\" -I/home/laighton/CLionProjects/snaky/snaky -I/home/laighton/CLionProjects/snaky/PRIVATE -I/home/laighton/CLionProjects/snaky/include -I/home/laighton/CLionProjects/snaky/lib/glfw/include -I/home/laighton/CLionProjects/snaky/lib/glm -g -o CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o -c /home/laighton/CLionProjects/snaky/src/utilities/DeltaTime.cpp",
+  "file": "/home/laighton/CLionProjects/snaky/src/utilities/DeltaTime.cpp",
+  "output": "CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o"
+},
+{
+  "directory": "/home/laighton/CLionProjects/snaky/out/Debug",
   "command": "/usr/bin/c++ -DASSETS_DIRECTORY=\\\"/home/laighton/CLionProjects/snaky/assets\\\" -I/home/laighton/CLionProjects/snaky/snaky -I/home/laighton/CLionProjects/snaky/PRIVATE -I/home/laighton/CLionProjects/snaky/include -I/home/laighton/CLionProjects/snaky/lib/glfw/include -I/home/laighton/CLionProjects/snaky/lib/glm -g -o CMakeFiles/snaky.dir/include/imgui/imgui.cpp.o -c /home/laighton/CLionProjects/snaky/include/imgui/imgui.cpp",
   "file": "/home/laighton/CLionProjects/snaky/include/imgui/imgui.cpp",
   "output": "CMakeFiles/snaky.dir/include/imgui/imgui.cpp.o"

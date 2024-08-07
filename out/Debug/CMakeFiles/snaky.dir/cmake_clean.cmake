@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o.d"
   "CMakeFiles/snaky.dir/src/entities/Cube.cpp.o"
   "CMakeFiles/snaky.dir/src/entities/Cube.cpp.o.d"
+  "CMakeFiles/snaky.dir/src/entities/Player.cpp.o"
+  "CMakeFiles/snaky.dir/src/entities/Player.cpp.o.d"
   "CMakeFiles/snaky.dir/src/entities/Score.cpp.o"
   "CMakeFiles/snaky.dir/src/entities/Score.cpp.o.d"
   "CMakeFiles/snaky.dir/src/glad.c.o"
@@ -25,6 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/snaky.dir/src/graphics/Shader.cpp.o.d"
   "CMakeFiles/snaky.dir/src/main.cpp.o"
   "CMakeFiles/snaky.dir/src/main.cpp.o.d"
+  "CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o"
+  "CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o.d"
   "snaky"
   "snaky.pdb"
 )

@@ -1,3 +1,4 @@
+#include "glm/ext/vector_float3.hpp"
 #include "imgui/imgui.h"
 #include "imgui/imgui_impl_glfw.h"
 #include "imgui/imgui_impl_opengl3.h"
@@ -13,17 +14,11 @@
 #include <string>
 #include "entities/Cube.h"
 #include "entities/Score.h"
+#include "utilities/DeltaTime.h"
+#include "entities/Player.h"
 
 #define S_WIDTH 800
 #define S_HEIGHT 600
-
-enum Direction {
-  UPWARD,
-  DOWNWARD,
-  LEFTWARD,
-  RIGHTWARD
-
-};
 
 float vertices[] = {
     -0.5f, -0.5f, -0.5f, 0.0f, 0.0f, 0.5f,  -0.5f, -0.5f, 1.0f, 0.0f,
@@ -72,8 +67,9 @@ float minX = 0.0f;
 float maxZ = 0.0f;
 float minZ = 0.0f;
 
-Cube player(modelPosition, SCALE_FACTOR, glm::vec3(79/255.0f,184/255.0f,44/255.0f));
+Player player(modelPosition, SCALE_FACTOR, glm::vec3(0.0f, 1.0f, 0.0f), UNIT);
 Score score(modelPosition, UNIT, 19, 19);
+DeltaTime deltaTime(TIME_STEP);
 
 int main() {
   initializeGLFW();
@@ -134,7 +130,7 @@ int main() {
     ImGui::SliderFloat(" ", &TIME_STEP, 0.01f, 1.0f);
     std::string countStr = std::to_string(stepCount);
     ImGui::Text("%s", countStr.c_str());
-    std::string dirStr = std::to_string(direction);
+    std::string dirStr = std::to_string(player.direction);
     ImGui::Text("%s", dirStr.c_str());
 
     std::string numStr = std::to_string(maxX);
@@ -201,10 +197,13 @@ void renderScene(Shader &shader, Camera &camera) {
 
   // bind vertex to draw the model
   glBindVertexArray(VAO);
-
-  movePlayer();
-  player.draw(shader, modelPosition);
-  score.draw(shader, score.Position);
+  bool isTick = deltaTime.isTick();
+  if (isTick) {
+     std::cout << isTick << std::endl;
+  }
+  player.movePlayer(isTick);
+  player.draw(shader);
+  score.draw(shader);
 
   camera.updateCameraVectors();
 
@@ -214,13 +213,13 @@ void renderScene(Shader &shader, Camera &camera) {
 
 void processInput(GLFWwindow *window) {
   if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
-    direction = UPWARD;
+    player.direction = UPWARD;
   } else if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
-    direction = DOWNWARD;
+    player.direction = DOWNWARD;
   } else if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
-    direction = RIGHTWARD;
+    player.direction = RIGHTWARD;
   } else if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
-    direction = LEFTWARD;
+    player.direction = LEFTWARD;
   }
 }
 
@@ -230,60 +229,60 @@ void initializeImGui() {
   ImGui::NewFrame();
 }
 
-void movePlayer() {
-  float unitDirection;
-  if (direction == RIGHTWARD || direction == DOWNWARD) {
-    unitDirection = UNIT;
-  } else if (direction == LEFTWARD || direction == UPWARD) {
-    unitDirection = -UNIT;
-  }
-
-  if (glfwGetTime() - lastTime > TIME_STEP) {
-    if (direction == RIGHTWARD || direction == LEFTWARD) {
-      modelPosition.x += unitDirection;
-    } else {
-      modelPosition.z += unitDirection;
-    }
-    lastTime = glfwGetTime();
-    score.randomPosition();
-
-    stepCount++;
-  }
-
-  // bounds
-  if (modelPosition.x > 6.9f) {
-    modelPosition.x -= UNIT * 10 * 2;
-    stepCount = 1;
-  }
-
-  if (modelPosition.x < -6.4f) {
-    modelPosition.x += UNIT * 10 * 2;
-    stepCount = 1;
-  }
-
-  if (modelPosition.z < -10.0f) {
-    modelPosition.z += UNIT * 10 * 2;
-    stepCount = 1;
-  }
-
-  if (modelPosition.z > 0.0f) {
-    modelPosition.z -= UNIT * 10 * 2;
-    stepCount = 1;
-  }
-
-  if (modelPosition.x >= maxX) {
-    maxX = modelPosition.x;
-  }
-
-  if (modelPosition.x <= minX) {
-    minX = modelPosition.x;
-  }
-
-  if (modelPosition.z >= maxZ) {
-    maxZ = modelPosition.z;
-  }
-
-  if (modelPosition.z <= minZ) {
-    minZ = modelPosition.z;
-  }
-}
+/*void movePlayer() {*/
+/*  float unitDirection;*/
+/*  if (direction == RIGHTWARD || direction == DOWNWARD) {*/
+/*    unitDirection = UNIT;*/
+/*  } else if (direction == LEFTWARD || direction == UPWARD) {*/
+/*    unitDirection = -UNIT;*/
+/*  }*/
+/**/
+/*  if (glfwGetTime() - lastTime > TIME_STEP) {*/
+/*    if (direction == RIGHTWARD || direction == LEFTWARD) {*/
+/*      modelPosition.x += unitDirection;*/
+/*    } else {*/
+/*      modelPosition.z += unitDirection;*/
+/*    }*/
+/*    lastTime = glfwGetTime();*/
+/*    score.randomPosition();*/
+/**/
+/*    stepCount++;*/
+/*  }*/
+/**/
+/*  // bounds*/
+/*  if (modelPosition.x > 6.9f) {*/
+/*    modelPosition.x -= UNIT * 10 * 2;*/
+/*    stepCount = 1;*/
+/*  }*/
+/**/
+/*  if (modelPosition.x < -6.4f) {*/
+/*    modelPosition.x += UNIT * 10 * 2;*/
+/*    stepCount = 1;*/
+/*  }*/
+/**/
+/*  if (modelPosition.z < -10.0f) {*/
+/*    modelPosition.z += UNIT * 10 * 2;*/
+/*    stepCount = 1;*/
+/*  }*/
+/**/
+/*  if (modelPosition.z > 0.0f) {*/
+/*    modelPosition.z -= UNIT * 10 * 2;*/
+/*    stepCount = 1;*/
+/*  }*/
+/**/
+/*  if (modelPosition.x >= maxX) {*/
+/*    maxX = modelPosition.x;*/
+/*  }*/
+/**/
+/*  if (modelPosition.x <= minX) {*/
+/*    minX = modelPosition.x;*/
+/*  }*/
+/**/
+/*  if (modelPosition.z >= maxZ) {*/
+/*    maxZ = modelPosition.z;*/
+/*  }*/
+/**/
+/*  if (modelPosition.z <= minZ) {*/
+/*    minZ = modelPosition.z;*/
+/*  }*/
+/*}*/
