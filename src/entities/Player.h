@@ -3,20 +3,27 @@
 
 #include "Cube.h"
 #include <GLFW/glfw3.h>
+#include <cmath>
+#include <limits>
+#include "../utilities/DeltaTime.h"
 enum Direction { UPWARD, DOWNWARD, LEFTWARD, RIGHTWARD };
 
 class Player : public Cube {
-
+private:
+    const float INTERPOLATION_SPEED = 5.0f; // Adjust this value to control the interpolation speed
   const float UNIT;
-
+  const float  SPEED = 10.0f;
+  int count = 0;
 public:
+  glm::vec3 GhostPosition;
   Direction direction = RIGHTWARD;
-  Player(glm::vec3 initialPosition,const float scaleFactor, glm::vec3 color,
+  Player(glm::vec3 initialPosition, const float scaleFactor, glm::vec3 color,
          const float UNIT)
-      : Cube(initialPosition, scaleFactor, color), UNIT(UNIT) {}
+      : Cube(initialPosition, scaleFactor, color), UNIT(UNIT), GhostPosition(initialPosition) {}
 
-  void movePlayer(bool isTick) {
+  void movePlayer(DeltaTime deltaTime, float isTick) {
     float unitDirection;
+    float currentDirection;
     if (direction == RIGHTWARD || direction == DOWNWARD) {
       unitDirection = UNIT;
     } else if (direction == LEFTWARD || direction == UPWARD) {
@@ -25,30 +32,36 @@ public:
 
     if (isTick) {
       if (direction == RIGHTWARD || direction == LEFTWARD) {
-        Position.x += unitDirection;
-	std::cout << "Player.x = " << Position.x << std::endl;
+        GhostPosition.x += unitDirection;
       } else {
-        Position.z += unitDirection;
-	std::cout << " helo2 " << std::endl;
+        GhostPosition.z += unitDirection;
       }
     }
 
+    /*if (direction == RIGHTWARD || direction == LEFTWARD) {*/
+    /*  Position.x += unitDirection * SPEED * deltaTime.deltaTime;*/
+    /*} else {*/
+    /*  Position.z += unitDirection * SPEED * deltaTime.deltaTime;*/
+    /*}*/
+
     // bounds
-    if (Position.x > 6.9f) {
-      Position.x -= UNIT * 10 * 2;
+    if (GhostPosition.x > 6.9f) {
+      GhostPosition.x -= UNIT * 10 * 2;
     }
 
-    if (Position.x < -6.4f) {
-      Position.x += UNIT * 10 * 2;
+    if (GhostPosition.x < -6.4f) {
+      GhostPosition.x += UNIT * 10 * 2;
     }
 
-    if (Position.z < -10.0f) {
-      Position.z += UNIT * 10 * 2;
+    if (GhostPosition.z < -10.0f) {
+      GhostPosition.z += UNIT * 10 * 2;
     }
 
-    if (Position.z > 0.0f) {
-      Position.z -= UNIT * 10 * 2;
+    if (GhostPosition.z > 0.0f) {
+      GhostPosition.z -= UNIT * 10 * 2;
     }
+
+    updateBox();
   }
 };
 

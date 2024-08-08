@@ -62,11 +62,6 @@ float lastTime;
 int stepCount = 1;
 Direction direction = RIGHTWARD;
 
-float maxX = 0.0f;
-float minX = 0.0f;
-float maxZ = 0.0f;
-float minZ = 0.0f;
-
 Player player(modelPosition, SCALE_FACTOR, glm::vec3(0.0f, 1.0f, 0.0f), UNIT);
 Score score(modelPosition, UNIT, 19, 19);
 DeltaTime deltaTime(TIME_STEP);
@@ -112,7 +107,6 @@ int main() {
   ImGui_ImplOpenGL3_Init("#version 330");
 
   lastTime = glfwGetTime();
-  
   while (!glfwWindowShouldClose(window)) {
 
     initializeImGui();
@@ -125,7 +119,7 @@ int main() {
     ImGui::SliderFloat("Yaw", &camera.Yaw, -180.0f, 180.0f);
     ImGui::Text("Object");
     /*ImGui::InputFloat3("Translation", &modelPosition[0]);*/
-    ImGui::SliderFloat3("Translation", &modelPosition[0], -10.0f, 10.0f);
+    ImGui::SliderFloat3("Translation", &player.GhostPosition[0], -10.0f, 10.0f);
     ImGui::Text("Time Step");
     ImGui::SliderFloat(" ", &TIME_STEP, 0.01f, 1.0f);
     std::string countStr = std::to_string(stepCount);
@@ -133,14 +127,6 @@ int main() {
     std::string dirStr = std::to_string(player.direction);
     ImGui::Text("%s", dirStr.c_str());
 
-    std::string numStr = std::to_string(maxX);
-    ImGui::Text("maxX: %s", numStr.c_str());
-    numStr = std::to_string(minX);
-    ImGui::Text("minX: %s", numStr.c_str());
-    numStr = std::to_string(maxZ);
-    ImGui::Text("maxZ: %s", numStr.c_str());
-    numStr = std::to_string(minZ);
-    ImGui::Text("minZ: %s", numStr.c_str());
     ImGui::End();
 
     ImGui::Render();
@@ -197,13 +183,13 @@ void renderScene(Shader &shader, Camera &camera) {
 
   // bind vertex to draw the model
   glBindVertexArray(VAO);
-  bool isTick = deltaTime.isTick();
-  if (isTick) {
-     std::cout << isTick << std::endl;
-  }
-  player.movePlayer(isTick);
+  deltaTime.getDeltaTime();
+  player.movePlayer(deltaTime, deltaTime.isTick());
   player.draw(shader);
   score.draw(shader);
+  if (player.Box.collidesWith(score.Box)) {
+    score.randomPosition();
+  }
 
   camera.updateCameraVectors();
 
@@ -212,13 +198,13 @@ void renderScene(Shader &shader, Camera &camera) {
 }
 
 void processInput(GLFWwindow *window) {
-  if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
+  if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS && player.direction != DOWNWARD) {
     player.direction = UPWARD;
-  } else if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
+  } else if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS && player.direction != UPWARD) {
     player.direction = DOWNWARD;
-  } else if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
+  } else if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS && player.direction != LEFTWARD) {
     player.direction = RIGHTWARD;
-  } else if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
+  } else if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS && player.direction != RIGHTWARD) {
     player.direction = LEFTWARD;
   }
 }
@@ -228,61 +214,3 @@ void initializeImGui() {
   ImGui_ImplGlfw_NewFrame();
   ImGui::NewFrame();
 }
-
-/*void movePlayer() {*/
-/*  float unitDirection;*/
-/*  if (direction == RIGHTWARD || direction == DOWNWARD) {*/
-/*    unitDirection = UNIT;*/
-/*  } else if (direction == LEFTWARD || direction == UPWARD) {*/
-/*    unitDirection = -UNIT;*/
-/*  }*/
-/**/
-/*  if (glfwGetTime() - lastTime > TIME_STEP) {*/
-/*    if (direction == RIGHTWARD || direction == LEFTWARD) {*/
-/*      modelPosition.x += unitDirection;*/
-/*    } else {*/
-/*      modelPosition.z += unitDirection;*/
-/*    }*/
-/*    lastTime = glfwGetTime();*/
-/*    score.randomPosition();*/
-/**/
-/*    stepCount++;*/
-/*  }*/
-/**/
-/*  // bounds*/
-/*  if (modelPosition.x > 6.9f) {*/
-/*    modelPosition.x -= UNIT * 10 * 2;*/
-/*    stepCount = 1;*/
-/*  }*/
-/**/
-/*  if (modelPosition.x < -6.4f) {*/
-/*    modelPosition.x += UNIT * 10 * 2;*/
-/*    stepCount = 1;*/
-/*  }*/
-/**/
-/*  if (modelPosition.z < -10.0f) {*/
-/*    modelPosition.z += UNIT * 10 * 2;*/
-/*    stepCount = 1;*/
-/*  }*/
-/**/
-/*  if (modelPosition.z > 0.0f) {*/
-/*    modelPosition.z -= UNIT * 10 * 2;*/
-/*    stepCount = 1;*/
-/*  }*/
-/**/
-/*  if (modelPosition.x >= maxX) {*/
-/*    maxX = modelPosition.x;*/
-/*  }*/
-/**/
-/*  if (modelPosition.x <= minX) {*/
-/*    minX = modelPosition.x;*/
-/*  }*/
-/**/
-/*  if (modelPosition.z >= maxZ) {*/
-/*    maxZ = modelPosition.z;*/
-/*  }*/
-/**/
-/*  if (modelPosition.z <= minZ) {*/
-/*    minZ = modelPosition.z;*/
-/*  }*/
-/*}*/

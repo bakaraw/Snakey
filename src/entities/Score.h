@@ -12,7 +12,7 @@ class Score : public Cube {
 
 public:
   Score(glm::vec3 basePosition, float unit, int maxUnitX, int maxUnitZ)
-      : Cube(basePosition), MaxUnitZ(maxUnitZ), MaxUnitX(maxUnitX),
+      : Cube(basePosition, 0.5), MaxUnitZ(maxUnitZ), MaxUnitX(maxUnitX),
         BasePosition(basePosition), Unit(unit) {
     srand((unsigned)time(NULL));
   }
@@ -21,7 +21,7 @@ public:
     float x = BasePosition.x + (Unit * randomInt(MaxUnitX));
     float z = BasePosition.z - (Unit * randomInt(MaxUnitZ));
     Position = glm::vec3(x, 0.0f, z); 
-    std::cout << "rend \nx: "<< x << "\nz: " << z << std::endl;
+    updateBox();
   }
 
   int randomInt(int max) { 

@@ -10,9 +10,9 @@ public:
   glm::vec3 max;
   HitBox(glm::vec3 min, glm::vec3 max) : min(min), max(max) {}
   bool collidesWith(HitBox &other) const {
-    return (min.x <= other.max.x && max.x >= other.min.x &&
-            min.y <= other.max.y && max.y >= other.min.y &&
-            min.z <= other.max.z && max.z >= other.min.z);
+    return (min.x < other.max.x && max.x > other.min.x &&
+            min.y < other.max.y && max.y > other.min.y &&
+            min.z < other.max.z && max.z > other.min.z);
   }
 };
 

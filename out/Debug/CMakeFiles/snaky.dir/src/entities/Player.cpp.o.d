@@ -392,4 +392,6 @@ CMakeFiles/snaky.dir/src/entities/Player.cpp.o: \
  /usr/include/c++/14.1.1/cstring /usr/include/string.h \
  /usr/include/strings.h \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/gtc/type_ptr.inl \
- /home/laighton/CLionProjects/snaky/lib/glfw/include/GLFW/glfw3.h
+ /home/laighton/CLionProjects/snaky/src/entities/../utilities/HitBox.h \
+ /home/laighton/CLionProjects/snaky/lib/glfw/include/GLFW/glfw3.h \
+ /home/laighton/CLionProjects/snaky/src/entities/../utilities/DeltaTime.h

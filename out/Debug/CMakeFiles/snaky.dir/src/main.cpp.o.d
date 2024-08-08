@@ -399,8 +399,10 @@ CMakeFiles/snaky.dir/src/main.cpp.o: \
  /home/laighton/CLionProjects/snaky/lib/glfw/include/GLFW/glfw3.h \
  /home/laighton/CLionProjects/snaky/src/entities/Cube.h \
  /home/laighton/CLionProjects/snaky/src/entities/../graphics/Shader.h \
+ /home/laighton/CLionProjects/snaky/src/entities/../utilities/HitBox.h \
  /home/laighton/CLionProjects/snaky/src/entities/Score.h \
  /home/laighton/CLionProjects/snaky/src/entities/Cube.h \
  /usr/include/c++/14.1.1/ctime \
  /home/laighton/CLionProjects/snaky/src/utilities/DeltaTime.h \
- /home/laighton/CLionProjects/snaky/src/entities/Player.h
+ /home/laighton/CLionProjects/snaky/src/entities/Player.h \
+ /home/laighton/CLionProjects/snaky/src/entities/../utilities/DeltaTime.h

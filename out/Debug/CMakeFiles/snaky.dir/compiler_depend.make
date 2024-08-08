@@ -1431,6 +1431,7 @@ CMakeFiles/snaky.dir/src/entities/Cube.cpp.o: /home/laighton/CLionProjects/snaky
   /home/laighton/CLionProjects/snaky/lib/glm/glm/packing.hpp \
   /home/laighton/CLionProjects/snaky/lib/glm/glm/trigonometric.hpp \
   /home/laighton/CLionProjects/snaky/src/graphics/Shader.h \
+  /home/laighton/CLionProjects/snaky/src/utilities/HitBox.h \
   /home/laighton/CLionProjects/snaky/src/entities/Cube.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -1888,6 +1889,8 @@ CMakeFiles/snaky.dir/src/entities/Player.cpp.o: /home/laighton/CLionProjects/sna
   /home/laighton/CLionProjects/snaky/lib/glm/glm/packing.hpp \
   /home/laighton/CLionProjects/snaky/lib/glm/glm/trigonometric.hpp \
   /home/laighton/CLionProjects/snaky/src/graphics/Shader.h \
+  /home/laighton/CLionProjects/snaky/src/utilities/DeltaTime.h \
+  /home/laighton/CLionProjects/snaky/src/utilities/HitBox.h \
   /home/laighton/CLionProjects/snaky/src/entities/Cube.h \
   /home/laighton/CLionProjects/snaky/src/entities/Player.h \
   /usr/include/alloca.h \
@@ -2345,6 +2348,7 @@ CMakeFiles/snaky.dir/src/entities/Score.cpp.o: /home/laighton/CLionProjects/snak
   /home/laighton/CLionProjects/snaky/lib/glm/glm/packing.hpp \
   /home/laighton/CLionProjects/snaky/lib/glm/glm/trigonometric.hpp \
   /home/laighton/CLionProjects/snaky/src/graphics/Shader.h \
+  /home/laighton/CLionProjects/snaky/src/utilities/HitBox.h \
   /home/laighton/CLionProjects/snaky/src/entities/Cube.h \
   /home/laighton/CLionProjects/snaky/src/entities/Score.h \
   /usr/include/alloca.h \
@@ -3646,6 +3650,8 @@ CMakeFiles/snaky.dir/src/main.cpp.o: /home/laighton/CLionProjects/snaky/src/main
   /home/laighton/CLionProjects/snaky/lib/glm/glm/integer.hpp \
   /home/laighton/CLionProjects/snaky/lib/glm/glm/packing.hpp \
   /home/laighton/CLionProjects/snaky/src/graphics/Shader.h \
+  /home/laighton/CLionProjects/snaky/src/utilities/DeltaTime.h \
+  /home/laighton/CLionProjects/snaky/src/utilities/HitBox.h \
   /home/laighton/CLionProjects/snaky/src/entities/Cube.h \
   /home/laighton/CLionProjects/snaky/src/entities/Player.h \
   /home/laighton/CLionProjects/snaky/src/entities/Score.h \
@@ -4257,6 +4263,8 @@ CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o: /home/laighton/CLionProjects
 
 /usr/include/c++/14.1.1/bits/predefined_ops.h:
 
+/home/laighton/CLionProjects/snaky/src/utilities/HitBox.h:
+
 /usr/include/bits/stdio_lim.h:
 
 /home/laighton/CLionProjects/snaky/lib/glm/glm/ext/matrix_double4x2_precision.hpp:
@@ -4361,6 +4369,10 @@ CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o: /home/laighton/CLionProjects
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avxintrin.h:
 
+/usr/include/c++/14.1.1/bits/string_view.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/sm3intrin.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/vaesintrin.h:
 
 /usr/include/bits/pthreadtypes-arch.h:
@@ -4412,10 +4424,6 @@ CMakeFiles/snaky.dir/src/utilities/DeltaTime.cpp.o: /home/laighton/CLionProjects
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/rdseedintrin.h:
 
 /home/laighton/CLionProjects/snaky/lib/glm/glm/detail/_fixes.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/sm3intrin.h:
-
-/usr/include/c++/14.1.1/bits/string_view.tcc:
 
 /usr/include/c++/14.1.1/cstring:
 

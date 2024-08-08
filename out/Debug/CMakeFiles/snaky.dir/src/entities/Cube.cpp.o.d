@@ -390,4 +390,5 @@ CMakeFiles/snaky.dir/src/entities/Cube.cpp.o: \
  /home/laighton/CLionProjects/snaky/lib/glm/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
  /usr/include/c++/14.1.1/cstring /usr/include/string.h \
  /usr/include/strings.h \
- /home/laighton/CLionProjects/snaky/lib/glm/glm/gtc/type_ptr.inl
+ /home/laighton/CLionProjects/snaky/lib/glm/glm/gtc/type_ptr.inl \
+ /home/laighton/CLionProjects/snaky/src/entities/../utilities/HitBox.h

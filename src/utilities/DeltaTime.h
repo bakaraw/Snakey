@@ -8,6 +8,7 @@ public:
   float TimeStep;
   float LastTime;
   float deltaTime;
+  float LastTick;
 
   DeltaTime(float timeStep) : LastTime(glfwGetTime()), TimeStep(timeStep){}
   float getDeltaTime(){
@@ -18,11 +19,10 @@ public:
   }
  bool isTick(){
     float currentTime = glfwGetTime();
-    if (currentTime - LastTime  > TimeStep) {
-      LastTime = currentTime;
+    if (currentTime - LastTick  > TimeStep) {
+      LastTick = currentTime;
       return true;
     }
-    /*std::cout << currentTime - LastTime << std::endl;*/
     return false;
   }
 };
