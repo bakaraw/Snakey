@@ -1,4 +1,4 @@
-# Install script for directory: /home/laighton/CLionProjects/snaky
+# Install script for directory: /home/bakaraw/Documents/cpp/Snakey
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/cmake_install.cmake")
+  include("/home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/laighton/CLionProjects/snaky/out/Debug/lib/glm/cmake_install.cmake")
+  include("/home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glm/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -67,6 +67,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/home/laighton/CLionProjects/snaky/out/Debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/bakaraw/Documents/cpp/Snakey/out/Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

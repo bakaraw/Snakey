@@ -61,9 +61,8 @@ float TIME_STEP = 0.2f;
 float lastTime;
 int stepCount = 1;
 Direction direction = RIGHTWARD;
-
-Player player(modelPosition, SCALE_FACTOR, glm::vec3(0.0f, 1.0f, 0.0f), UNIT);
-Score score(modelPosition, UNIT, 19, 19);
+Player *player = nullptr;
+Score *score = nullptr;
 DeltaTime deltaTime(TIME_STEP);
 
 int main() {
@@ -89,6 +88,9 @@ int main() {
   glEnable(GL_DEPTH_TEST);
 
   Shader shader("assets/shaders/vShader.glsl", "assets/shaders/fShader.glsl");
+  player = new Player(modelPosition, &shader, SCALE_FACTOR, glm::vec3(0.0f, 1.0f, 0.0f), UNIT);
+  score = new Score(modelPosition, &shader, UNIT, 19, 19);
+
   glm::vec3 cameraPosition(0.5f, 12.0f, 1.8f);
   glm::vec3 cameraFront(0.0f, 0.0f, -1.0f);
   glm::vec3 cameraUp(0.0f, 1.0f, 0.0f);
@@ -108,7 +110,6 @@ int main() {
 
   lastTime = glfwGetTime();
   while (!glfwWindowShouldClose(window)) {
-
     initializeImGui();
     processInput(window);
     renderScene(shader, camera);
@@ -119,12 +120,12 @@ int main() {
     ImGui::SliderFloat("Yaw", &camera.Yaw, -180.0f, 180.0f);
     ImGui::Text("Object");
     /*ImGui::InputFloat3("Translation", &modelPosition[0]);*/
-    ImGui::SliderFloat3("Translation", &player.GhostPosition[0], -10.0f, 10.0f);
+    ImGui::SliderFloat3("Translation", &player->Position[0], -10.0f, 10.0f);
     ImGui::Text("Time Step");
     ImGui::SliderFloat(" ", &TIME_STEP, 0.01f, 1.0f);
     std::string countStr = std::to_string(stepCount);
     ImGui::Text("%s", countStr.c_str());
-    std::string dirStr = std::to_string(player.direction);
+    std::string dirStr = std::to_string(player->direction);
     ImGui::Text("%s", dirStr.c_str());
 
     ImGui::End();
@@ -184,11 +185,12 @@ void renderScene(Shader &shader, Camera &camera) {
   // bind vertex to draw the model
   glBindVertexArray(VAO);
   deltaTime.getDeltaTime();
-  player.movePlayer(deltaTime, deltaTime.isTick());
-  player.draw(shader);
-  score.draw(shader);
-  if (player.Box.collidesWith(score.Box)) {
-    score.randomPosition();
+  player->draw();
+  score->draw();
+  player->movePlayer(deltaTime);
+  if (player->Box.collidesWith(score->Box)) {
+    player->spawnBody();
+    score->randomPosition();
   }
 
   camera.updateCameraVectors();
@@ -198,14 +200,14 @@ void renderScene(Shader &shader, Camera &camera) {
 }
 
 void processInput(GLFWwindow *window) {
-  if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS && player.direction != DOWNWARD) {
-    player.direction = UPWARD;
-  } else if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS && player.direction != UPWARD) {
-    player.direction = DOWNWARD;
-  } else if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS && player.direction != LEFTWARD) {
-    player.direction = RIGHTWARD;
-  } else if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS && player.direction != RIGHTWARD) {
-    player.direction = LEFTWARD;
+  if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS && player->direction != DOWNWARD) {
+    player->direction = UPWARD;
+  } else if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS && player->direction != UPWARD) {
+    player->direction = DOWNWARD;
+  } else if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS && player->direction != LEFTWARD) {
+    player->direction = RIGHTWARD;
+  } else if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS && player->direction != RIGHTWARD) {
+    player->direction = LEFTWARD;
   }
 }
 

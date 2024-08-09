@@ -1,10 +1,10 @@
 lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o: \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/wl_window.c \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/wl_window.c \
  /usr/include/stdc-predef.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/internal.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/../include/GLFW/glfw3.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/internal.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/../include/GLFW/glfw3.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
@@ -14,10 +14,10 @@ lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o: \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdbool.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/platform.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/null_platform.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/wl_platform.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdbool.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/platform.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/null_platform.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/wl_platform.h \
  /usr/include/wayland-client-core.h /usr/include/wayland-util.h \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h /usr/include/bits/floatn.h \
@@ -26,7 +26,7 @@ lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o: \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
  /usr/include/bits/iscanonical.h /usr/include/inttypes.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
  /usr/include/wayland-version.h /usr/include/xkbcommon/xkbcommon.h \
  /usr/include/stdio.h /usr/include/bits/types/__fpos_t.h \
  /usr/include/bits/types/__mbstate_t.h \
@@ -37,13 +37,13 @@ lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o: \
  /usr/include/xkbcommon/xkbcommon-keysyms.h \
  /usr/include/xkbcommon/xkbcommon-compat.h \
  /usr/include/xkbcommon/xkbcommon-compose.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/xkb_unicode.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/posix_poll.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/xkb_unicode.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/posix_poll.h \
  /usr/include/poll.h /usr/include/sys/poll.h /usr/include/bits/poll.h \
  /usr/include/bits/types/__sigset_t.h \
  /usr/include/bits/types/struct_timespec.h /usr/include/bits/endian.h \
  /usr/include/bits/endianness.h /usr/include/bits/types/time_t.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/x11_platform.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/x11_platform.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/environments.h /usr/include/bits/confname.h \
  /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
@@ -84,8 +84,8 @@ lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o: \
  /usr/include/X11/extensions/xfixeswire.h \
  /usr/include/X11/extensions/shape.h \
  /usr/include/X11/extensions/shapeconst.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/null_joystick.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/linux_joystick.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/null_joystick.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/linux_joystick.h \
  /usr/include/linux/input.h /usr/include/sys/time.h \
  /usr/include/sys/ioctl.h /usr/include/bits/ioctls.h \
  /usr/include/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
@@ -99,7 +99,7 @@ lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o: \
  /usr/include/asm/posix_types_64.h /usr/include/asm-generic/posix_types.h \
  /usr/include/linux/input-event-codes.h /usr/include/linux/limits.h \
  /usr/include/regex.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/posix_thread.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/posix_thread.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
  /usr/include/bits/types/struct_sched_param.h /usr/include/bits/cpu-set.h \
  /usr/include/time.h /usr/include/bits/time.h /usr/include/bits/timex.h \
@@ -109,8 +109,8 @@ lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o: \
  /usr/include/bits/setjmp.h \
  /usr/include/bits/types/struct___jmp_buf_tag.h \
  /usr/include/bits/pthread_stack_min-dynamic.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/posix_time.h \
- /home/laighton/CLionProjects/snaky/lib/glfw/src/../include/GLFW/glfw3native.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/posix_time.h \
+ /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src/../include/GLFW/glfw3native.h \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-float.h /usr/include/errno.h \
@@ -126,14 +126,14 @@ lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o: \
  /usr/include/bits/mman-linux.h /usr/include/bits/mman-shared.h \
  /usr/include/bits/mman_ext.h /usr/include/sys/timerfd.h \
  /usr/include/bits/timerfd.h /usr/include/linux/input-event-codes.h \
- /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src/wayland-client-protocol.h \
+ /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src/wayland-client-protocol.h \
  /usr/include/wayland-client.h /usr/include/wayland-client-core.h \
  /usr/include/wayland-client-protocol.h \
- /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src/xdg-shell-client-protocol.h \
- /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src/xdg-decoration-unstable-v1-client-protocol.h \
- /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src/viewporter-client-protocol.h \
- /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src/relative-pointer-unstable-v1-client-protocol.h \
- /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src/pointer-constraints-unstable-v1-client-protocol.h \
- /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src/xdg-activation-v1-client-protocol.h \
- /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src/idle-inhibit-unstable-v1-client-protocol.h \
- /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src/fractional-scale-v1-client-protocol.h
+ /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src/xdg-shell-client-protocol.h \
+ /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src/xdg-decoration-unstable-v1-client-protocol.h \
+ /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src/viewporter-client-protocol.h \
+ /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src/relative-pointer-unstable-v1-client-protocol.h \
+ /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src/pointer-constraints-unstable-v1-client-protocol.h \
+ /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src/xdg-activation-v1-client-protocol.h \
+ /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src/idle-inhibit-unstable-v1-client-protocol.h \
+ /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src/fractional-scale-v1-client-protocol.h

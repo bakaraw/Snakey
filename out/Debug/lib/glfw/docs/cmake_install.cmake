@@ -1,4 +1,4 @@
-# Install script for directory: /home/laighton/CLionProjects/snaky/lib/glfw/docs
+# Install script for directory: /home/bakaraw/Documents/cpp/Snakey/lib/glfw/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

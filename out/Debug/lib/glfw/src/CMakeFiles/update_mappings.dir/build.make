@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/laighton/CLionProjects/snaky
+CMAKE_SOURCE_DIR = /home/bakaraw/Documents/cpp/Snakey
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/laighton/CLionProjects/snaky/out/Debug
+CMAKE_BINARY_DIR = /home/bakaraw/Documents/cpp/Snakey/out/Debug
 
 # Utility rule file for update_mappings.
 
@@ -67,8 +67,8 @@ include lib/glfw/src/CMakeFiles/update_mappings.dir/compiler_depend.make
 include lib/glfw/src/CMakeFiles/update_mappings.dir/progress.make
 
 lib/glfw/src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd /home/laighton/CLionProjects/snaky/lib/glfw/src && /usr/bin/cmake -P /home/laighton/CLionProjects/snaky/lib/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/bakaraw/Documents/cpp/Snakey/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src && /usr/bin/cmake -P /home/bakaraw/Documents/cpp/Snakey/lib/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 
 update_mappings: lib/glfw/src/CMakeFiles/update_mappings
 update_mappings: lib/glfw/src/CMakeFiles/update_mappings.dir/build.make
@@ -79,10 +79,10 @@ lib/glfw/src/CMakeFiles/update_mappings.dir/build: update_mappings
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/build
 
 lib/glfw/src/CMakeFiles/update_mappings.dir/clean:
-	cd /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/clean
 
 lib/glfw/src/CMakeFiles/update_mappings.dir/depend:
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/laighton/CLionProjects/snaky /home/laighton/CLionProjects/snaky/lib/glfw/src /home/laighton/CLionProjects/snaky/out/Debug /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bakaraw/Documents/cpp/Snakey /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src /home/bakaraw/Documents/cpp/Snakey/out/Debug /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/depend
 

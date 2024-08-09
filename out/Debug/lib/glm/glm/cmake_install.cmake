@@ -1,4 +1,4 @@
-# Install script for directory: /home/laighton/CLionProjects/snaky/lib/glm/glm
+# Install script for directory: /home/bakaraw/Documents/cpp/Snakey/lib/glm/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

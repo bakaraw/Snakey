@@ -17,7 +17,7 @@ set(IMGUI_SOURCES
 )
 
 # Add executable with ImGui source files
-add_executable(snaky src/main.cpp src/glad.c src/graphics/Shader.cpp src/graphics/Camera.cpp src/entities/Cube.cpp src/entities/Score.cpp src/entities/Player.cpp src/utilities/DeltaTime.cpp ${IMGUI_SOURCES})
+add_executable(snaky src/main.cpp src/glad.c src/graphics/Shader.cpp src/graphics/Camera.cpp src/entities/Cube.cpp src/entities/Score.cpp src/entities/Player.cpp src/entities/Body.cpp src/utilities/DeltaTime.cpp ${IMGUI_SOURCES})
 
 set(ASSETS_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/assets)
 target_compile_definitions(${PROJECT_NAME} PRIVATE ASSETS_DIRECTORY="${ASSETS_DIRECTORY}")

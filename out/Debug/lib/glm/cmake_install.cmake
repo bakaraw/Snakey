@@ -1,4 +1,4 @@
-# Install script for directory: /home/laighton/CLionProjects/snaky/lib/glm
+# Install script for directory: /home/bakaraw/Documents/cpp/Snakey/lib/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/laighton/CLionProjects/snaky/out/Debug/lib/glm/glm/cmake_install.cmake")
+  include("/home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glm/glm/cmake_install.cmake")
 
 endif()
 

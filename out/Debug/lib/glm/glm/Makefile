@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/laighton/CLionProjects/snaky
+CMAKE_SOURCE_DIR = /home/bakaraw/Documents/cpp/Snakey
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/laighton/CLionProjects/snaky/out/Debug
+CMAKE_BINARY_DIR = /home/bakaraw/Documents/cpp/Snakey/out/Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles /home/laighton/CLionProjects/snaky/out/Debug/lib/glm/glm//CMakeFiles/progress.marks
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles 0
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bakaraw/Documents/cpp/Snakey/out/Debug/CMakeFiles /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glm/glm//CMakeFiles/progress.marks
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bakaraw/Documents/cpp/Snakey/out/Debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/clean
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/preinstall
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/preinstall
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/glm/glm/CMakeFiles/glm.dir/rule:
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/CMakeFiles/glm.dir/rule
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/CMakeFiles/glm.dir/rule
 .PHONY : lib/glm/glm/CMakeFiles/glm.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ glm: lib/glm/glm/CMakeFiles/glm.dir/rule
 
 # fast build rule for target.
 glm/fast:
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/build
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/build
 .PHONY : glm/fast
 
 detail/glm.o: detail/glm.cpp.o
@@ -180,7 +180,7 @@ detail/glm.o: detail/glm.cpp.o
 
 # target to build an object file
 detail/glm.cpp.o:
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o
 .PHONY : detail/glm.cpp.o
 
 detail/glm.i: detail/glm.cpp.i
@@ -188,7 +188,7 @@ detail/glm.i: detail/glm.cpp.i
 
 # target to preprocess a source file
 detail/glm.cpp.i:
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.i
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.i
 .PHONY : detail/glm.cpp.i
 
 detail/glm.s: detail/glm.cpp.s
@@ -196,7 +196,7 @@ detail/glm.s: detail/glm.cpp.s
 
 # target to generate assembly for a file
 detail/glm.cpp.s:
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.s
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.s
 .PHONY : detail/glm.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

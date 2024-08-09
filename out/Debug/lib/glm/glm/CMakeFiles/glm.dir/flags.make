@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/laighton/CLionProjects/snaky/lib/glm
+CXX_INCLUDES = -I/home/bakaraw/Documents/cpp/Snakey/lib/glm
 
 CXX_FLAGS = -g
 

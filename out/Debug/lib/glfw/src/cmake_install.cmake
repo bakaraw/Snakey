@@ -1,4 +1,4 @@
-# Install script for directory: /home/laighton/CLionProjects/snaky/lib/glfw/src
+# Install script for directory: /home/bakaraw/Documents/cpp/Snakey/lib/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,6 +43,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/src/libglfw3.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/src/libglfw3.a")
 endif()
 

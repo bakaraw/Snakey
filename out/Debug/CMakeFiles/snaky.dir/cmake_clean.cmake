@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/snaky.dir/include/imgui/imgui_tables.cpp.o.d"
   "CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o"
   "CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.o.d"
+  "CMakeFiles/snaky.dir/src/entities/Body.cpp.o"
+  "CMakeFiles/snaky.dir/src/entities/Body.cpp.o.d"
   "CMakeFiles/snaky.dir/src/entities/Cube.cpp.o"
   "CMakeFiles/snaky.dir/src/entities/Cube.cpp.o.d"
   "CMakeFiles/snaky.dir/src/entities/Player.cpp.o"

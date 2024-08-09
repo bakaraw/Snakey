@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/laighton/CLionProjects/snaky
+CMAKE_SOURCE_DIR = /home/bakaraw/Documents/cpp/Snakey
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/laighton/CLionProjects/snaky/out/Debug
+CMAKE_BINARY_DIR = /home/bakaraw/Documents/cpp/Snakey/out/Debug
 
 # Utility rule file for copy_assets.
 
@@ -67,8 +67,8 @@ include CMakeFiles/copy_assets.dir/compiler_depend.make
 include CMakeFiles/copy_assets.dir/progress.make
 
 CMakeFiles/copy_assets:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying assets to build directory"
-	/usr/bin/cmake -E copy_directory /home/laighton/CLionProjects/snaky/assets /home/laighton/CLionProjects/snaky/out/Debug/assets
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/bakaraw/Documents/cpp/Snakey/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying assets to build directory"
+	/usr/bin/cmake -E copy_directory /home/bakaraw/Documents/cpp/Snakey/assets /home/bakaraw/Documents/cpp/Snakey/out/Debug/assets
 
 copy_assets: CMakeFiles/copy_assets
 copy_assets: CMakeFiles/copy_assets.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/copy_assets.dir/clean:
 .PHONY : CMakeFiles/copy_assets.dir/clean
 
 CMakeFiles/copy_assets.dir/depend:
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/laighton/CLionProjects/snaky /home/laighton/CLionProjects/snaky /home/laighton/CLionProjects/snaky/out/Debug /home/laighton/CLionProjects/snaky/out/Debug /home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles/copy_assets.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bakaraw/Documents/cpp/Snakey /home/bakaraw/Documents/cpp/Snakey /home/bakaraw/Documents/cpp/Snakey/out/Debug /home/bakaraw/Documents/cpp/Snakey/out/Debug /home/bakaraw/Documents/cpp/Snakey/out/Debug/CMakeFiles/copy_assets.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/copy_assets.dir/depend
 

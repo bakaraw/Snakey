@@ -11,8 +11,8 @@ class Score : public Cube {
   float Unit;
 
 public:
-  Score(glm::vec3 basePosition, float unit, int maxUnitX, int maxUnitZ)
-      : Cube(basePosition, 0.5), MaxUnitZ(maxUnitZ), MaxUnitX(maxUnitX),
+  Score(glm::vec3 basePosition, Shader *shader, float unit, int maxUnitX, int maxUnitZ)
+      : Cube(basePosition, shader, 0.5), MaxUnitZ(maxUnitZ), MaxUnitX(maxUnitX),
         BasePosition(basePosition), Unit(unit) {
     srand((unsigned)time(NULL));
   }

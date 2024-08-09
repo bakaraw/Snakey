@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/install_manifest.txt\"")
+if (NOT EXISTS "/home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "/home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/install_manifest.txt" files)
+file(READ "/home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

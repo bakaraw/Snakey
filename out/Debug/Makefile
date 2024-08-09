@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/laighton/CLionProjects/snaky
+CMAKE_SOURCE_DIR = /home/bakaraw/Documents/cpp/Snakey
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/laighton/CLionProjects/snaky/out/Debug
+CMAKE_BINARY_DIR = /home/bakaraw/Documents/cpp/Snakey/out/Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles /home/laighton/CLionProjects/snaky/out/Debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bakaraw/Documents/cpp/Snakey/out/Debug/CMakeFiles /home/bakaraw/Documents/cpp/Snakey/out/Debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/laighton/CLionProjects/snaky/out/Debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bakaraw/Documents/cpp/Snakey/out/Debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -407,6 +407,30 @@ include/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/include/imgui/imgui_widgets.cpp.s
 .PHONY : include/imgui/imgui_widgets.cpp.s
 
+src/entities/Body.o: src/entities/Body.cpp.o
+.PHONY : src/entities/Body.o
+
+# target to build an object file
+src/entities/Body.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/src/entities/Body.cpp.o
+.PHONY : src/entities/Body.cpp.o
+
+src/entities/Body.i: src/entities/Body.cpp.i
+.PHONY : src/entities/Body.i
+
+# target to preprocess a source file
+src/entities/Body.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/src/entities/Body.cpp.i
+.PHONY : src/entities/Body.cpp.i
+
+src/entities/Body.s: src/entities/Body.cpp.s
+.PHONY : src/entities/Body.s
+
+# target to generate assembly for a file
+src/entities/Body.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snaky.dir/build.make CMakeFiles/snaky.dir/src/entities/Body.cpp.s
+.PHONY : src/entities/Body.cpp.s
+
 src/entities/Cube.o: src/entities/Cube.cpp.o
 .PHONY : src/entities/Cube.o
 
@@ -638,6 +662,9 @@ help:
 	@echo "... include/imgui/imgui_widgets.o"
 	@echo "... include/imgui/imgui_widgets.i"
 	@echo "... include/imgui/imgui_widgets.s"
+	@echo "... src/entities/Body.o"
+	@echo "... src/entities/Body.i"
+	@echo "... src/entities/Body.s"
 	@echo "... src/entities/Cube.o"
 	@echo "... src/entities/Cube.i"
 	@echo "... src/entities/Cube.s"

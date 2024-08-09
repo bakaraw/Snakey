@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/laighton/CLionProjects/snaky
+CMAKE_SOURCE_DIR = /home/bakaraw/Documents/cpp/Snakey
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/laighton/CLionProjects/snaky/out/Debug
+CMAKE_BINARY_DIR = /home/bakaraw/Documents/cpp/Snakey/out/Debug
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include lib/glfw/CMakeFiles/uninstall.dir/compiler_depend.make
 include lib/glfw/CMakeFiles/uninstall.dir/progress.make
 
 lib/glfw/CMakeFiles/uninstall:
-	cd /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw && /usr/bin/cmake -P /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/cmake_uninstall.cmake
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw && /usr/bin/cmake -P /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/cmake_uninstall.cmake
 
 uninstall: lib/glfw/CMakeFiles/uninstall
 uninstall: lib/glfw/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ lib/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/build
 
 lib/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/clean
 
 lib/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /home/laighton/CLionProjects/snaky/out/Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/laighton/CLionProjects/snaky /home/laighton/CLionProjects/snaky/lib/glfw /home/laighton/CLionProjects/snaky/out/Debug /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw /home/laighton/CLionProjects/snaky/out/Debug/lib/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/bakaraw/Documents/cpp/Snakey/out/Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bakaraw/Documents/cpp/Snakey /home/bakaraw/Documents/cpp/Snakey/lib/glfw /home/bakaraw/Documents/cpp/Snakey/out/Debug /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw /home/bakaraw/Documents/cpp/Snakey/out/Debug/lib/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/depend
 
